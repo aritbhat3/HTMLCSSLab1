@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >
+            Document
+        </title>
+        <style>
+            #AnimatedBarGraph {
+                background-color: gray;
+                position: absolute;
+            }
+            #AnimatedBarGraph article{
+                display: inline-block;
+            }
+            div {
+                width: 100px;
+                height: 500px;
+                background-color: goldenrod;
+            }
+            #Col1 {
+            width: 100%;
+            height: 70%;
+                animation-name: section1;
+                background-color: white;
+                animation-duration: 1.5s;
+            }
+            #Col2 {
+            width: 100%;
+            height: 60%;
+                animation-name: section2;
+                background-color: white;
+                animation-duration: 2s;
+            }
+            #Col3 {
+            width: 100%;
+            height: 20%;
+                animation-name: section3;
+                background-color: white;
+                animation-duration: 3s;
+            }
+            @keyframes section1 {
+            0%{height: 100%;}
+            100%{height: 70%;}
+        }
+            @keyframes section2 {
+            0%{height: 100%;}
+            100%{height: 60%;}
+        }
+            @keyframes section3 {
+            0%{height: 100%;}
+            100%{height: 20%;}
+        }
+        </style>
+    </head>
+    <body>
+        <section id="AnimatedBarGraph">
+            <article>
+                <div>
+                    <article id="Col1"></article>
+                </div>
+                <p>30%</p>
+            </article>
+            <article>
+                <div>
+                    <article id="Col2"></article>
+                </div>
+                <p>40%</p>
+            </article>
+            <article>
+                <div>
+                    <article id="Col3"></article>
+                </div>
+                <p>80%</p>
+            </article>
+            <h1 style="text-align: center;">Bar Plot</h1>
+        </section>
+    </body>
+</html>
